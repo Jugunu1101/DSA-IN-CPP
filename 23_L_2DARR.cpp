@@ -119,42 +119,49 @@
 
 
 // wave order 
+// #include<iostream>
+// using namespace std;
+// int wave_order(int a[][3], int r ,int c){
+//     for(int col=0;col<c;col++){
+
+//         if( col & 1){
+//             for(int row=r-1;row>=0;row--){
+//                 cout<<a[row][col]<<" ";
+//             }
+//         }
+//         else {
+//             for(int row=0;row<r;row++){
+//                 cout<<a[row][col]<<" ";
+//             }
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// };
+// int main(){
+//     int a[3][3];
+//     int n=sizeof(a)/sizeof(int); 
+//     cout<<"enter "<<n<<" element :\n";
+//     for(int i=0;i<3;i++){
+//         for(int j=0;j<3;j++){
+//             cin>>a[i][j];
+//         }
+//     }
+// cout<<" simple order \n";
+//  for(int i=0;i<3;i++){
+//         for(int j=0;j<3;j++){
+//             cout<<a[i][j]<<" ";
+//         }
+//         cout<<endl;
+//  }
+//  cout<<"wave order \n";
+// wave_order(a,3,3);
+//         return 0;
+// }
+
 #include<iostream>
 using namespace std;
-int wave_order(int a[][3], int r ,int c){
-    for(int col=0;col<c;col++){
-
-        if( col & 1){
-            for(int row=r-1;row>=0;row--){
-                cout<<a[row][col]<<" ";
-            }
-        }
-        else {
-            for(int row=0;row<r;row++){
-                cout<<a[row][col]<<" ";
-            }
-        }
-        cout<<endl;
-    }
+int main (){
+    cout<<"hlo";
     return 0;
-};
-int main(){
-    int a[3][3];
-    int n=sizeof(a)/sizeof(int); 
-    cout<<"enter "<<n<<" element :\n";
-    for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cin>>a[i][j];
-        }
-    }
-cout<<" simple order \n";
- for(int i=0;i<3;i++){
-        for(int j=0;j<3;j++){
-            cout<<a[i][j]<<" ";
-        }
-        cout<<endl;
- }
- cout<<"wave order \n";
-wave_order(a,3,3);
-        return 0;
 }

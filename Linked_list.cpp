@@ -117,7 +117,123 @@
 
 // dubbely LL #@$@%^
 // 
-
+// #include<iostream>
+// using namespace std;
+// class node {
+//     public:
+//     int data;
+//     node *prev;
+//     node *next;
+//     node (int d){
+//     data=d;
+//     prev=NULL;
+//     next=NULL;
+//     }
+// };
+// node *head=NULL;
+// void traverse(node *&head){
+//     node *temp=head;
+//     while(temp!=NULL){
+//         cout<<temp->data<<" ";
+//         temp=temp->next;
+//     }cout<<"\n";
+// };
+// void insert_f(){
+//     int d;
+//     cout<<"enter data";
+//     cin>>d;
+//     node *n1=new node(d);
+//     if(head==NULL){
+//         head=n1;
+//     }
+//     else {
+//         n1->next=head;
+//         n1->prev=NULL;
+//         head=n1;
+//     }
+// };
+// void insert_end(){
+//     int d;
+//     cout<<"enter data";
+//     cin>>d;
+//     node *n1=new node(d);
+//     if(head==NULL){
+//         head=n1;
+//     }
+//     else {
+//         node *temp=head;
+//         while(temp->next!=NULL){
+//             temp=temp->next;
+//         }
+//         temp->next=n1;
+//         n1->prev=temp;
+//     }
+// };
+// void insert_pos(){
+//     int d,p;
+//     cout<<"enter pos of data";
+//     cin>>p;
+//     cout<<"enter data";
+//     cin>>d;
+//     node *n1=new node(d);
+//     if(head==NULL){
+//         insert_f();
+//     }
+//     else {
+//         node *temp=head;
+//         int count=1;
+//         while(count < p-1){
+//             count++;
+//             temp=temp->next;
+//         }
+//         if(temp->next==NULL){
+//             insert_end();
+//         }
+//         n1->next=temp->next;
+//         temp->next->prev=n1;
+//         temp->next=n1;
+//         n1->prev=temp;
+//     }
+// };
+// void delete_pos(){
+//     int p;
+//     cout<<"enter which pos is to be deleted: ";
+//     cin>>p;
+//     //1st pos
+//     if(p==1){
+//         node *temp=head;
+//         head=head->next;
+//         head->prev=NULL;
+//         delete temp;
+//     }
+//     else{
+//        node *curr=head;
+//        node *prev=NULL;
+//        int cnt=1;
+//        while(cnt< p){
+//         prev=curr;
+//         curr=curr->next;
+//         cnt++;
+//        }
+//        curr->prev=NULL;
+//        prev->next=curr->next;
+//        delete curr; 
+       
+//     }
+// }
+// int main(){
+// insert_f();
+// insert_f();
+// insert_f();
+// traverse(head);
+// insert_end();
+// insert_end();
+// insert_end();
+// traverse(head);
+// delete_pos();
+// traverse(head);
+//     return 0;
+// }
 
 
 // circular LL @!@!#@$#%&
