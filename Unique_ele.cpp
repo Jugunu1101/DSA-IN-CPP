@@ -7,5 +7,6 @@ int main (){
     for(int i:arr){
         ans^=i;
     }
+    // print
     cout<<"the unique element is :"<<ans;
 }
