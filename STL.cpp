@@ -169,69 +169,68 @@
 
 
 // map
-// #include<iostream>
-// #include<map>
-// using namespace std;
-// int main (){
-//     map<int,string> m;
-//     m[1]="nitin";
-//     m[2]="neeraj";
-//     m[3]="jatin";
-// for(auto i:m){
-//     cout<<i.first<<" "<<i.second<<"\n";
-// }
-// cout<<"after insertion\n";
-// m.insert({5,"kumar"});
-// cout<<"find 5 1/0 : "<<m.count(5);
-// cout<<"before erase\n";
-// for(auto i:m){
-//     cout<<i.first<<" "<<i.second<<"\n";
-// }
-// cout<<"after erase\n";
-// m.erase(5); 
-// for(auto i:m){
-//     cout<<i.first<<" "<<i.second<<"\n";
-// }
-//     return 0;
-// }
+#include<iostream>
+#include<map>
+using namespace std;
+int main (){
+    map<int,string> m;
+    m[1]="nitin sir ";
+    m[2]="jatin";
+for(auto i:m){
+    cout<<i.first<<" "<<i.second<<"\n";
+}
+cout<<"after insertion\n";
+m.insert({5,"kumar"});
+cout<<"find 5 1/0 : "<<m.count(5);
+cout<<"before erase\n";
+for(auto i:m){
+    cout<<i.first<<" "<<i.second<<"\n";
+}
+cout<<"after erase\n";
+m.erase(5); 
+for(auto i:m){
+    cout<<i.first<<" "<<i.second<<"\n";
+}
+    return 0;
+}
 
 
 
 // algorithm 
-#include<iostream>
-#include<algorithm>
-#include<vector>
-using namespace std;
-int main (){
-    vector<int >v;
-    v.push_back(2);
-    v.push_back(3);
-    v.push_back(30);
-    v.push_back(37);
-    v.push_back(38);
+// #include<iostream>
+// #include<algorithm>
+// #include<vector>
+// using namespace std;
+// int main (){
+//     vector<int >v;
+//     v.push_back(2);
+//     v.push_back(3);
+//     v.push_back(30);
+//     v.push_back(37);
+//     v.push_back(38);
 
-cout<<" 0 for not found 1 for found\n";
-cout<<binary_search(v.begin(),v.end(),5)<<endl;
-cout<<" 0 for not found 1 for found\n";
-cout<<binary_search(v.begin(),v.end(),3);
-cout<<"\n lower bound\n";
-cout<<lower_bound(v.begin(),v.end(),2 ) -v.begin()<<endl;
+// cout<<" 0 for not found 1 for found\n";
+// cout<<binary_search(v.begin(),v.end(),5)<<endl;
+// cout<<" 0 for not found 1 for found\n";
+// cout<<binary_search(v.begin(),v.end(),3);
+// cout<<"\n lower bound\n";
+// cout<<lower_bound(v.begin(),v.end(),2 ) -v.begin()<<endl;
 
-int a= 2,b=3;
-cout<<"max "<<max(a,b); 
-cout<<"min "<<min(a,b);
-cout<<"swap ";
-swap(a,b);
-cout<<" a= "<<a;
-cout<<" b="<<b<<endl;
-string s="abcd";
-cout<<"reverse string :";reverse(s.begin(),s.end());
-cout<<s;
-cout<<"\n";
-rotate(v.begin(),v.begin()+1,v.end());
-for(int i: v){
-    cout<<i<<" ";
-}
+// int a= 2,b=3;
+// cout<<"max "<<max(a,b); 
+// cout<<"min "<<min(a,b);
+// cout<<"swap ";
+// swap(a,b);
+// cout<<" a= "<<a;
+// cout<<" b="<<b<<endl;
+// string s="abcd";
+// cout<<"reverse string :";reverse(s.begin(),s.end());
+// cout<<s;
+// cout<<"\n";
+// rotate(v.begin(),v.begin()+1,v.end());
+// for(int i: v){
+//     cout<<i<<" ";
+// }
 
-    return 0;
-}
+//     return 0;
+// }
